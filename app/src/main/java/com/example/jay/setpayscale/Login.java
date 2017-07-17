@@ -38,8 +38,6 @@ public class Login extends AppCompatActivity {
         enteredUsername = (EditText) findViewById(R.id.username);
         enteredPassword = (EditText) findViewById(R.id.password);
         button = (Button) findViewById(R.id.loginButton);
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
 
     }
 
@@ -50,12 +48,10 @@ public class Login extends AppCompatActivity {
         password = String.valueOf(enteredPassword.getText());
         if(username.equals("") || password.equals("")){
             Toast.makeText(this, "Please enter valid username and password", Toast.LENGTH_SHORT).show();
-        }else if(username.equals("admin") && password.equals("pass")) {
+        }else if {
 
-            //check ch = new check();
-            //ch.execute();
-            welcome = new Intent(c,MainActivity.class);
-            startActivity(welcome);
+            check ch = new check();
+            ch.execute();            
         }
 
     }
@@ -99,8 +95,7 @@ public class Login extends AppCompatActivity {
         }
 
         @Override
-        protected void onPostExecute(String s) {
-            Log.v("aseem",""+s);
+        protected void onPostExecute(String s) {        
             if(s.equals(null)){
                 Toast.makeText(c,"Data Not Loading",Toast.LENGTH_SHORT).show();
             }else{

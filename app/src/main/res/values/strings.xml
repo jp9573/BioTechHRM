@@ -1,0 +1,70 @@
+<resources>
+
+    <string name="app_name">BioTechHRM</string>
+    <string name="select_institute">Select Institute</string>
+    <string-array name="institute_names">
+        <item>Institute 1</item>
+        <item>Institute 2</item>
+        <item>Institute 3</item>
+        <item>Institute 4</item>
+        <item>Institute 5</item>
+        <item>Institute 6</item>
+        <item>Institute 7</item>
+        <item>Institute 8</item>
+        <item>Institute 9</item>
+        <item>Institute 10</item>
+        <item>Institute 11</item>
+        <item>Institute 12</item>
+        <item>Institute 13</item>
+        <item>Institute 14</item>
+        <item>Institute 15</item>
+        <item>Institute 16</item>
+    </string-array>
+    <string-array name="class_name">
+        <item>CLASS A</item>
+        <item>CLASS B</item>
+        <item>CLASS C</item>
+        <item>CLASS D</item>
+    </string-array>
+    <string-array name="years">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+        <item>Five</item>
+
+    </string-array>
+    <string name="ins_prompt"> choose an institute</string>
+    <string-array name="ins_array">
+
+        <item>ins 1</item>
+        <item>ins 2</item>
+        <item>ins 3</item>
+        <item>ins 4</item>
+        <item>ins 5</item>
+        <item>ins 6</item>
+        <item>ins 7</item>
+        <item>ins 8</item>
+        <item>ins 9</item>
+        <item>ins 10</item>
+        <item>ins 11</item>
+        <item>ins 12</item>
+        <item>ins 13</item>
+
+    </string-array>
+    <string name="dept_prompt"> choose a department</string>
+    <string-array name="dept_array">
+        <item>Dept_1</item>
+        <item>Dept_2</item>
+        <item>Dept_3</item>
+        <item>Dept_4</item>
+        <item>Dept_5</item>
+    </string-array>
+    <string-array name="specializations">
+        <item>Spe 1</item>
+        <item>Spe 2</item>
+        <item>Spe 3</item>
+        <item>Spe 4</item>
+        <item>Spe 5</item>
+    </string-array>
+</resources>

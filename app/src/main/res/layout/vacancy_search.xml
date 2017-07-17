@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vacancy_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jay.setpayscale.VacancySearch">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vacancy By Institute"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/head" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Institute"
+        android:textColor="#000"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/head"
+        android:layout_marginTop="40dp"
+        android:id="@+id/institutes" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="Class Name"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/institutes"
+        android:layout_marginTop="40dp"
+        android:id="@+id/Class" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="Retired in next"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Class"
+        android:layout_marginTop="40dp"
+        android:id="@+id/retired" />
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner1"
+        android:layout_alignTop="@+id/institutes"
+        android:layout_alignStart="@+id/spinner2"
+        android:clipToPadding="false"
+        android:fadeScrollbars="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner2"
+        android:layout_alignTop="@+id/Class"
+        android:layout_toEndOf="@+id/institutes"
+        android:layout_marginStart="32dp" />
+
+
+
+    <Spinner
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner3"
+        android:layout_alignBottom="@+id/retired"
+        android:layout_alignStart="@+id/spinner2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Years"
+        android:textColor="#000"
+        android:id="@+id/years"
+        android:layout_alignTop="@+id/spinner3"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:id="@+id/button"
+        android:layout_below="@+id/spinner3"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_toEndOf="@+id/button"
+        android:onClick="upcoming"
+        android:text="Upcoming Vacancies" />
+
+    <Button
+        android:text="Vacancies Right Now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/button2"
+        android:layout_below="@+id/button"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/button"
+        android:onClick="currentVacancies" />
+</RelativeLayout>

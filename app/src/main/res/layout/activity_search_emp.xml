@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jay.setpayscale.SearchEmployee"
+    android:background="@color/colorAccent">
+
+    <TextView
+        android:text="Employe_name* :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="86dp"
+        android:id="@+id/textView2"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Search Employee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:id="@+id/textView"
+        android:layout_marginTop="13dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:text="Institute Name  :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/textView8"
+        android:textSize="18sp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/emp_name"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ist1"
+        android:spinnerMode="dropdown"
+        android:dropDownWidth="wrap_content"
+        android:entries="@array/ins_array"
+        android:prompt="@string/select_institute"
+        android:layout_alignTop="@+id/textView8"
+        android:contentDescription="select"
+        android:layout_alignStart="@+id/emp_name" />
+
+    <TextView
+        android:text="* field are mandatory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="18sp"
+        android:textColor="#900000"
+        android:layout_marginBottom="11dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp" />
+
+    <Button
+        android:text="SEARCH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_emp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/buttonstyle"
+        android:textColorLink="@android:color/white"
+        android:backgroundTint="@android:color/white"
+        android:onClick="searchEmp"
+        android:layout_below="@+id/ist1"
+        android:layout_centerHorizontal="true" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerview"></android.support.v7.widget.RecyclerView>
+    </RelativeLayout>

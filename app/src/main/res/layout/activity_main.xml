@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jay.setpayscale.MainActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/first"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:paddingTop="10dp"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:paddingBottom="5dp"
+        android:gravity="center"
+        android:text="WELCOME TO DEPARTMENT OF BIOTECHNOLOGY"/>
+    <LinearLayout
+        android:id="@+id/topPanel"
+        android:layout_below="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:background="#fff"
+            android:onClick="searchEmployee"
+            android:padding="20dp"
+            android:src="@drawable/a1" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:background="#fff" />
+
+        <ImageButton
+            android:id="@+id/browse_op"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:background="#fff"
+            android:scaleType="fitXY"
+            android:onClick="viewInstitute"
+            android:src="@drawable/a5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/label1"
+        android:layout_width="match_parent"
+        android:weightSum="100"
+        android:layout_below="@+id/topPanel"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:text="Search Employee"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:text="View Institute"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/endpanel"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@+id/label1"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageButton
+            android:id="@+id/vacancy_op"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="45"
+            android:background="#fff"
+            android:padding="40dp"
+            android:src="@drawable/a3"
+            android:onClick="vacancySearch"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:background="#fff" />
+
+        <ImageButton
+            android:id="@+id/profile_op"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="45"
+            android:background="#fff"
+            android:onClick="click_p"
+            android:src="@drawable/default_pro_picture"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/endpanel1"
+        android:layout_width="match_parent"
+        android:weightSum="100"
+        android:layout_below="@+id/endpanel"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:text="Search Vacancies"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:text="Edit Profile"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/endpanel2"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@+id/endpanel1"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageButton
+            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="45"
+            android:background="#fff"
+            android:padding="40dp"
+            android:src="@drawable/payscale_icon"
+            android:onClick="payScale"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:background="#fff" />
+
+        <ImageButton
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="45"
+            android:background="#fff"
+            android:onClick="postSetting"
+            android:src="@drawable/posts" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="100"
+        android:layout_below="@+id/endpanel2"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:text="PayScale Settings"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:text="Post Settings"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"/>
+
+
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>
